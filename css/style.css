@@ -2,7 +2,7 @@
   --base-width: 940px;
 }
 
-/* 영역별 배경 */
+/* 영역별 임시 코드 */
 
 .header {
   background: yellow; /*root 사용하기 */
@@ -20,24 +20,39 @@
   background: lime;
 }
 
+.footer-bg {
+  background: silver;
+}
+
+/* 기본 스타일 */
+body, body *, body *::before, body *::after {
+  box-sizing: border-box;
+}
+
 /* 레이아웃 */
 
-/* .header, .visual, .main, .slogan, .footer {
-  그룹핑 
-} */
+.header, .visual, .main, .slogan, .footer {
+  width: var(--base-width);
+  margin: 0 auto;
+}
 
 .header {
-  width: var(--base-width); /*root 사용하기 */
+  margin: 0 auto; /* 위아래 왼쪽오른쪽 */
 }
 .visual {
-  width: var(--base-width);
+  
 }
 .main {
-  width: var(--base-width);
+  
 }
 .slogan {
-  width: var(--base-width);
+  
 }
+
+.footer-bg {
+  
+}
+
 .footer {
-  width: var(--base-width);
+  
 }
