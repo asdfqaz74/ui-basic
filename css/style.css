@@ -53,11 +53,28 @@ body, body *, body *::before, body *::after {
 }
 
 /* 메인 */
-.main {
+/* .main {
   display: flex;
   flex-flow: nowrap;
   justify-content: space-around;
   padding: 40px 0;
+} */
+
+/* .main::after{
+  content: "마지막 가상 요소 박스";
+  clear: both;
+  display: block;
+  background: gray;
+} */
+
+.main {
+  display: flow-root;
+  min-height: 450px;
+}
+
+.group {
+  float: left;
+  margin: 0 20px;
 }
 
 .group1 {
@@ -71,6 +88,11 @@ body, body *, body *::before, body *::after {
 .group3 {
   width: 190px;
 }
+
+/* html에 clearfix 추가 */
+/* .clearfix {
+  clear: both;
+} */
 
 /* 슬로건 */
 .slogan {
