@@ -1,5 +1,19 @@
+/* 변수 */
 :root {
   --base-width: 940px;
+}
+
+/* 숨김 콘텐츠 */
+.a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* 플렉스 컨테이너 */
@@ -31,6 +45,20 @@ body *::after {
 .header {
 }
 
+/* 로그 */
+.logo {
+  margin: 0;
+  line-height: 1;
+}
+
+.logo a {
+  background: purple;
+}
+
+.logo img {
+  vertical-align: top;
+}
+
 /* 비주얼 */
 .visual {
 }
@@ -39,12 +67,14 @@ body *::after {
 .main {
   /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
   /* float: left; */
+  /* float 이슈를 해결하기 위한 최신 해결책 */
   display: flow-root;
   min-height: 450px;
   padding: 40px 0;
+  /* overflow: hidden; */
 }
 
-/* 가상 요소를 이용한 float 이슈 해결 방법 */
+/* 가상 요소를 이용한 float 이슈 해결책 */
 /* .main::after {
   content: '';
   clear: both;
@@ -59,14 +89,20 @@ body *::after {
 
 .group1 {
   width: 250px;
+<<<<<<< HEAD
   background: rgba(0, 0, 255, 0.5);
   float: right;
+=======
+>>>>>>> c800e01da00e2d417ced4d2f61bea9f07bfdf7ae
 }
 
 .group2 {
   width: 380px;
+<<<<<<< HEAD
   background: green;
   float: left;
+=======
+>>>>>>> c800e01da00e2d417ced4d2f61bea9f07bfdf7ae
 }
 
 .group3 {
