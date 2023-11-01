@@ -70,6 +70,7 @@ body, body *, body *::before, body *::after {
 .main {
   display: flow-root;
   min-height: 450px;
+  padding: 40px 0;
 }
 
 .group {
