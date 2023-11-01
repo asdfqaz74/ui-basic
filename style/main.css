@@ -1,0 +1,94 @@
+:root {
+  --base-width: 940px;
+}
+
+/* 플렉스 컨테이너 */
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* 기본 스타일 */
+body,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+  width: var(--base-width);
+  margin: 0 auto;
+}
+
+/* 헤더 */
+.header {
+}
+
+/* 비주얼 */
+.visual {
+}
+
+/* 메인 콘텐츠 */
+.main {
+  /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
+  /* float: left; */
+  display: flow-root;
+  min-height: 450px;
+  padding: 40px 0;
+}
+
+/* 가상 요소를 이용한 float 이슈 해결 방법 */
+/* .main::after {
+  content: '';
+  clear: both;
+  display: block;
+  background: gray;
+} */
+
+.group {
+  float: left;
+  margin: 0 20px;
+}
+
+.group1 {
+  width: 250px;
+  background: rgba(0, 0, 255, 0.5);
+  float: right;
+}
+
+.group2 {
+  width: 380px;
+  background: green;
+  float: left;
+}
+
+.group3 {
+  width: 190px;
+}
+
+.temp {
+  float: left;
+}
+
+/* .clearfix {
+  clear: both;
+} */
+
+/* 슬로건 */
+.slogan {
+}
+
+/* 푸터 */
+.footer-bg {
+  background: silver;
+}
+
+.footer {
+}
