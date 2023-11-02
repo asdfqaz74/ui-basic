@@ -178,12 +178,24 @@ a {
 .sub-menu {
   position: absolute;
   top: 50px;
-  left: 0;
+  /* left: 0; */
   /* background: blue; */
   display: none;
   white-space: nowrap;
   padding: 4px 0;
   color: #000;
+}
+
+.is-active .sub-menu {
+  display: block;
+}
+
+.menu-html, .menu-css, .menu-standards {
+  left: 0;
+}
+
+.menu-accessibility, .menu-qna, .menu-archive {
+  right: 0;
 }
 
 .sub-menu a:hover, .sub-menu a:focus {
@@ -210,11 +222,8 @@ a {
   content: '\e800';
 }
 
-.menu-item:first-child .sub-menu{
-  display: block;
-}
 
-.sub-menu li, .sub-menu a{
+.sub-menu li, .sub-menu a {
   display: inline-block;
 }
 
