@@ -16,6 +16,14 @@
   border-width: 0;
 }
 
+/* 공통 스타일 - Reset */
+.reset-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /* 영역별 임시 코드 */
 
 .header {
@@ -58,18 +66,28 @@ body, body *, body *::before, body *::after {
 
 /* 헤더 */
 .header {
-  
+  position: relative;
 }
 
 /* 로고 */
 .logo {
+  position: absolute;
+  top: 45px;
+  left: 50px;
   margin: 0;
-  line-height: 1;
-  background: purple;
+  font-size: 1em;
 }
 
 .logo a, .logo img {
   display: block;
+}
+
+/* 안내 링크 */
+.member-service{
+  background: lime;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 /* 비주얼 */
