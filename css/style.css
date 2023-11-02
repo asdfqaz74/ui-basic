@@ -1,3 +1,5 @@
+@import url("./fontello.css");
+
 /* 변수 */
 :root {
   --base-width: 940px;
@@ -62,6 +64,8 @@ body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background-color: #ccc;
   color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -99,6 +103,7 @@ a {
   left: 50px;
   margin: 0;
   font-size: 1em;
+  /* z-index: 10; */
 }
 
 .logo a, .logo img {
@@ -146,6 +151,7 @@ a {
   box-shadow: 0px -2px 0 0 #000;
   height: 50px;
   padding-left: 220px;
+  color: #fff;
 }
 
 /* .menu-item:first-child {
@@ -153,16 +159,67 @@ a {
 } */
 
 .menu-item {
-  float:left;
+  position: relative;
+  float: left;
+  border-left: white solid 2px;
+}
+
+.menu-button {
+  line-height: 49px;
+  background: transparent;
+  padding: 0 21px;
+  border: 0 none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
 }
 
 .sub-menu {
   position: absolute;
+  top: 50px;
+  left: 0;
+  /* background: blue; */
   display: none;
+  white-space: nowrap;
+  padding: 4px 0;
+  color: #000;
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+  color : red;
+}
+
+.sub-menu a::before {
+  content: '\f192';
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: .2em;
+}
+
+.sub-menu a:hover::before {
+  content: '\e800';
 }
 
 .menu-item:first-child .sub-menu{
   display: block;
+}
+
+.sub-menu li, .sub-menu a{
+  display: inline-block;
+}
+
+.sub-menu a {
+  padding: 6px var(--anchor-space);
 }
 
 /* 비주얼 */
