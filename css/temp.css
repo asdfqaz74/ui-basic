@@ -2,25 +2,28 @@
 
 .header {
   background: yellow;
+  min-height: 15vh;
 }
+
 .visual {
   background: pink;
   height: 10vh;
 }
+
 .main {
   background: aqua;
-  /* height: 50vh; */
+  height: 50vh;
 }
 
-.group1{
+.group1 {
   background: blue;
 }
 
-.group2{
+.group2 {
   background: tomato;
 }
 
-.group3{
+.group3 {
   background: brown;
 }
 
@@ -28,6 +31,7 @@
   background: orange;
   height: 10vh;
 }
+
 .footer {
   background: lime;
   height: 15vh;
