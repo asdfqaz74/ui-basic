@@ -109,7 +109,7 @@ a {
 .member-service{
   text-align: right;
   text-transform: uppercase;
-  background: skyblue;
+  /* background: skyblue; */
   padding: 4px 0;
   position: relative;
   left: var(--anchor-space);
@@ -117,16 +117,52 @@ a {
 }
 
 .member-service li {
-  background: orange;
+  /* background: orange; */
   display: inline-block;
   /* background: orange; */
 }
 
 .member-service a {
   display: inline-block;
-  background: gray;
+  /* background: gray; */
   padding: 6px var(--anchor-space);
   
+}
+
+.navigation{
+  background: yellow;
+}
+
+.menu {
+  /* background-color: aqua;
+  background-image: url(../images/ani_flower_03.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200px 250px; */
+  /* background: aqua url(../images/ani_flower_03.png) no-repeat 0 0 / 200px 250px; */
+  background: #e8bd25;
+  background: linear-gradient(to bottom, #e8bd25 0%,#f4812e 50%,#e8bd25 100%);
+  /* border-top: 2px solid #000; */
+  box-shadow: 0px -2px 0 0 #000;
+  height: 50px;
+  padding-left: 220px;
+}
+
+/* .menu-item:first-child {
+  margin-left: 220px;
+} */
+
+.menu-item {
+  float:left;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.menu-item:first-child .sub-menu{
+  display: block;
 }
 
 /* 비주얼 */
