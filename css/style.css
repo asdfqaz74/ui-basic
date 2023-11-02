@@ -51,6 +51,22 @@ body, body *, body *::before, body *::after {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #ccc;
+  color: #181818;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* 레이아웃 */
 
 .header, .visual, .main, .slogan, .footer {
@@ -84,17 +100,30 @@ body, body *, body *::before, body *::after {
 
 /* 안내 링크 */
 .member-service{
-  font-size: 0;
   text-align: right;
+  text-transform: uppercase;
+  /* font-variant: small-caps; */
 }
 
 .member-service li {
   display: inline-block;
-  background: orange;
+  /* background: orange; */
+}
+
+/* .member-service li::before{
+  content: ":";
+}
+
+.member-service li:first-child::before{
+  content: "";
+} */
+
+.member-service li:nth-child(n+2)::before {
+  content: ":";
 }
 
 .member-service a {
-  font-size: 16px;
+  
 }
 
 /* 비주얼 */
