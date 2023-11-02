@@ -84,10 +84,17 @@ body, body *, body *::before, body *::after {
 
 /* 안내 링크 */
 .member-service{
-  background: lime;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
+  font-size: 0;
+  text-align: right;
+}
+
+.member-service li {
+  display: inline-block;
+  background: orange;
+}
+
+.member-service a {
+  font-size: 16px;
 }
 
 /* 비주얼 */
