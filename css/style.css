@@ -4,6 +4,7 @@
 :root {
   --base-width: 940px;
   --anchor-space: 10px;
+  --accent-color: #ed602d;
 }
 
 /* 숨김 컨텐츠 */
@@ -199,7 +200,7 @@ a {
 }
 
 .sub-menu a:hover, .sub-menu a:focus {
-  color : red;
+  color : var(--accent-color);
 }
 
 .sub-menu a::before {
@@ -218,7 +219,7 @@ a {
   margin-left: .2em;
 }
 
-.sub-menu a:hover::before {
+.sub-menu a:hover::before, .sub-menu a:focus::before {
   content: '\e800';
 }
 
