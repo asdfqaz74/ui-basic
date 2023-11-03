@@ -157,27 +157,27 @@
   <main class="main">
     <div class="group group1">
       <section class="login">
-        <h2 class="login-title">
-          로그인
-        </h2>
+        <h2 class="login-title">로그인</h2>
         <form action="/" class="login-form" method="get">
           <fieldset class="reset-box">
             <legend>회원 로그인 폼</legend>
             <div class="user-email">
               <label for="userEmail">아이디</label>
-              <input type="text" id="userEmail" placeholder="fe@euid.dev" required name="userEmail" />
+              <input type="email" id="userEmail" placeholder="fe@euid.dev" required name="userEmail" />
             </div>
             <div class="user-password">
               <label for="userPwd">비밀번호</label>
-              <input type="text" id="userPwd" placeholder="8자리 이상" required name="userPwd" minlength="8" />
+              <input type="password" id="userPwd" placeholder="8자리 이상" required name="userPwd" minlength="8" />
             </div>
             <button class="login-button">로그인</button>
           </fieldset>
         </form>
-        <u class="member reset-box">
-          <li><a href="/">회원가입</a></li>
-          <li><a href="/">아이디/비밀번호 찾기</a></li>
-        </u>
+        <ul class="member reset-list">
+          <li class="icon-right-open"><a href="/">회원가입</a></li>
+          <li class="icon-right-open">
+            <a href="/">아이디/비밀번호 찾기</a>
+          </li>
+        </ul>
       </section>
     </div>
     <div class="group group2">그룹2</div>
