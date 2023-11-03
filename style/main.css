@@ -5,10 +5,12 @@
   --base-width: 940px;
   --anchor-space: 10px;
   --accent-color: #ed602d;
+  --point-color: #f4a52e;
 }
 
 /* 숨김 콘텐츠 */
-.sr-only {
+.sr-only,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -27,6 +29,12 @@
   margin-bottom: 0;
   list-style-type: none;
   padding-left: 0;
+}
+
+.reset-box {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* 플렉스 컨테이너 */
@@ -259,12 +267,21 @@ a {
   0% {
     font-size: 12px;
     color: rgba(0, 0, 0, 0);
-    /* transform: translate(0, 0); */
+    transform: translate(0, 0);
   }
   100% {
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
-    /* transform: translate(400px, 75px); */
+    transform: translate(400px, 75px);
+  }
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -281,6 +298,13 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  /* animation-name: fadeEffect;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running; */
+  animation: fadeEffect 2s infinite alternate ease-in-out running;
 }
 
 .visual::before {
@@ -291,10 +315,12 @@ a {
 .visual::after {
   background: url(./../images/ani_flower_03.png) no-repeat 300px 0,
     url(./../images/ani_flower_04.png) no-repeat 800px 30px;
+  animation-delay: 1s;
 }
 
 .visual-text {
-  /* position: absolute; */
+  position: absolute;
+  z-index: 10;
   animation-name: moveEffect;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -302,6 +328,13 @@ a {
   /* background: pink; */
 }
 
+/* 시스템 설정 -손쉬운 사용 - 디스플레이 - 동작줄이기 선택했을 경우  */
+@media (prefers-reduced-motion: reduce) {
+  .visual::before,
+  .visual::after {
+    animation: none;
+  }
+}
 /* 메인 콘텐츠 */
 .main {
   /* 자식 요소가 플로트 되었을 때 부모를 플로트로 지정하여 문제 해결 */
@@ -356,6 +389,26 @@ a {
   clear: both;
 } */
 
+/* 로그인 */
+.login {
+  background: var(--accent-color)
+    radial-gradient(
+      circle at right top,
+      var(--point-color),
+      var(--accent-color)
+    );
+  padding: 15px;
+  box-shadow: 5px 5px 0 0 #aaa;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+  margin: 0 0 10px;
+}
 /* 슬로건 */
 .slogan {
 }
