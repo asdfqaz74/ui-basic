@@ -382,6 +382,23 @@ a {
 
 }
 
+.login-form {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  border-bottom: #000 solid 10px;
+  padding-bottom: 10px;
+}
+
+.member {
+  background: #fff;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 10px 0 10px;
+}
+
 /* 슬로건 */
 .slogan {
   
