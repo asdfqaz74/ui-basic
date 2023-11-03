@@ -369,14 +369,14 @@ a {
   background: var(--accent-color) radial-gradient(circle at right top, var(--accent-color) , var(--point-color));
   padding: 15px;
   box-shadow: 5px 5px 0 0 #aaa;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .login-title {
   color: #ff0;
   font-size: 15px;
   font-weight: 700;
-  padding-left: 15px;
+  padding-left: 10px;
   margin: 0 0 10px;
   /* text-indent: 15px; 첫 줄 들여쓰기 */
 
@@ -389,14 +389,14 @@ a {
 }
 
 .login-form fieldset {
-  border-bottom: #000 solid 10px;
+  border-bottom: 1px solid #aaa;
   padding-bottom: 10px;
 }
 
 .member {
   background: #fff;
-  border-radius: 0px 0px 10px 10px;
-  padding: 10px 10px 0 10px;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px 10px 10px 10px;
 }
 
 /* 슬로건 */
